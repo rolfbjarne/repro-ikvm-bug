@@ -14,7 +14,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
+    <DefineConstants>DEBUG;NET_4_0;NO_AUTHENTICODE;STATIC;NO_SYMBOL_WRITER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ExternalConsole>true</ExternalConsole>
@@ -32,6 +32,95 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\Impl\ITypeOwner.cs" />
+    <Compile Include="ikvm-fork\reflect\Impl\SymbolSupport.cs" />
+    <Compile Include="ikvm-fork\reflect\AmbiguousMatchException.cs" />
+    <Compile Include="ikvm-fork\reflect\Assembly.cs" />
+    <Compile Include="ikvm-fork\reflect\AssemblyName.cs" />
+    <Compile Include="ikvm-fork\reflect\BadImageFormatException.cs" />
+    <Compile Include="ikvm-fork\reflect\Binder.cs" />
+    <Compile Include="ikvm-fork\reflect\ConstructorInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\CustomAttributeData.cs" />
+    <Compile Include="ikvm-fork\reflect\CustomAttributeNamedArgument.cs" />
+    <Compile Include="ikvm-fork\reflect\CustomAttributeTypedArgument.cs" />
+    <Compile Include="ikvm-fork\reflect\CustomModifiers.cs" />
+    <Compile Include="ikvm-fork\reflect\Enums.cs" />
+    <Compile Include="ikvm-fork\reflect\EventInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\ExceptionHandlingClause.cs" />
+    <Compile Include="ikvm-fork\reflect\FieldInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\FieldSignature.cs" />
+    <Compile Include="ikvm-fork\reflect\Fusion.cs" />
+    <Compile Include="ikvm-fork\reflect\GenericWrappers.cs" />
+    <Compile Include="ikvm-fork\reflect\InterfaceMapping.cs" />
+    <Compile Include="ikvm-fork\reflect\LocalVariableInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\ManifestResourceInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\MarshalSpec.cs" />
+    <Compile Include="ikvm-fork\reflect\MemberInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\MethodBase.cs" />
+    <Compile Include="ikvm-fork\reflect\MethodBody.cs" />
+    <Compile Include="ikvm-fork\reflect\MethodImplMap.cs" />
+    <Compile Include="ikvm-fork\reflect\MethodInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\MethodSignature.cs" />
+    <Compile Include="ikvm-fork\reflect\Missing.cs" />
+    <Compile Include="ikvm-fork\reflect\Module.cs" />
+    <Compile Include="ikvm-fork\reflect\ParameterInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\ParameterModifier.cs" />
+    <Compile Include="ikvm-fork\reflect\Projection.cs" />
+    <Compile Include="ikvm-fork\reflect\PropertyInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\PropertySignature.cs" />
+    <Compile Include="ikvm-fork\reflect\Signature.cs" />
+    <Compile Include="ikvm-fork\reflect\StandAloneMethodSig.cs" />
+    <Compile Include="ikvm-fork\reflect\StrongNameKeyPair.cs" />
+    <Compile Include="ikvm-fork\reflect\Type.cs" />
+    <Compile Include="ikvm-fork\reflect\TypeInfo.cs" />
+    <Compile Include="ikvm-fork\reflect\TypeNameParser.cs" />
+    <Compile Include="ikvm-fork\reflect\Universe.cs" />
+    <Compile Include="ikvm-fork\reflect\Util.cs" />
+    <Compile Include="ikvm-fork\reflect\coreclr.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\AssemblyBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\ConstructorBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\CustomAttributeBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\CustomModifiersBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\EnumBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\Enums.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\EventBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\ExceptionHandler.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\FieldBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\ILGenerator.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\MethodBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\ModuleBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\OpCode.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\OpCodes.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\ParameterBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\PropertyBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\SignatureHelper.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\Tokens.cs" />
+    <Compile Include="ikvm-fork\reflect\Emit\TypeBuilder.cs" />
+    <Compile Include="ikvm-fork\reflect\Metadata\CliHeader.cs" />
+    <Compile Include="ikvm-fork\reflect\Metadata\MetadataRW.cs" />
+    <Compile Include="ikvm-fork\reflect\Metadata\Tables.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\AssemblyReader.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\Authenticode.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\ByteReader.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\EventInfoImpl.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\Field.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\GenericTypeParameter.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\MetadataReader.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\Method.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\ModuleReader.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\PEReader.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\PropertyInfoImpl.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\ResourceModule.cs" />
+    <Compile Include="ikvm-fork\reflect\Reader\TypeDefImpl.cs" />
+    <Compile Include="ikvm-fork\reflect\Writer\ByteBuffer.cs" />
+    <Compile Include="ikvm-fork\reflect\Writer\Heaps.cs" />
+    <Compile Include="ikvm-fork\reflect\Writer\MetadataWriter.cs" />
+    <Compile Include="ikvm-fork\reflect\Writer\ModuleWriter.cs" />
+    <Compile Include="ikvm-fork\reflect\Writer\PEWriter.cs" />
+    <Compile Include="ikvm-fork\reflect\Writer\ResourceSection.cs" />
+    <Compile Include="ikvm-fork\reflect\Writer\TextSection.cs" />
+    <Compile Include="ikvm-fork\reflect\Writer\VersionInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
+
